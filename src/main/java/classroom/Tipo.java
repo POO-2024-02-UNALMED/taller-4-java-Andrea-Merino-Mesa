@@ -10,7 +10,6 @@ public enum Tipo {
 		this.nombre = nombre;
 	}
 	//El constructor de un enum debe de ser privado para que no se puedan crear nuevos objetos.
-	
 	//Además, los objetos que se están creando no pasan ningún dato de tipo String, 
 	//por lo que hay tener un método que solo acepte números.
 	

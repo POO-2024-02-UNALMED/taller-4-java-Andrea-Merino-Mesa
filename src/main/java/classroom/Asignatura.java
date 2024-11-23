@@ -45,6 +45,7 @@ public class Asignatura {
    // public void cambiarDatos(int codigoInterno) {
         //this.codigoInterno = codigoInterno;
     //}
+    
     //El cambiarDatos para codigoInterno y codigoExterno tienen la misma firma,
     //por lo que hay ambiguedad
 

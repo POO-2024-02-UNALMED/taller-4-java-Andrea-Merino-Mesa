@@ -5,8 +5,8 @@ public class Grupo {
     public Persona[] estudiantes;
     public Persona profesor;
     public Asignatura asignatura;
-    public int codigo;
-    //Toca quitarle el final porque no deja que se cambie el valor una vez asignado, además, le quitamos el =0 porque ese es el valor por defecto de int
+    public final int codigo;
+    //Toca quitarle el =0 porque como es final, si ya se le asigna un valor, no va a dejar modificarlo en los métodos.
     public String horario;
 
     public Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura, int codigo, String horario) {
@@ -27,6 +27,10 @@ public class Grupo {
     }
 
     public Grupo(Persona[] estudiantes, Persona profesor, Asignatura asignatura) {
+        this.codigo = 0;
+        //Porque al poner el código final, no le podíamos asignar un valor desde allá,
+        //pero si podemos asignar aquí ese valor (para cuando entra a este método). 
+        
 		this.estudiantes = estudiantes;
         this.profesor = profesor;
         this.asignatura = asignatura;

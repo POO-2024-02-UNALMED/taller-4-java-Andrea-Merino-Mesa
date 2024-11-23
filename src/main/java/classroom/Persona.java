@@ -41,7 +41,9 @@ public class Persona {
     }
 
     public Persona(String nombre) {
-        this.nombre = "";
+        this.nombre = nombre;
+        //asignar el valor de nombre al atributo nombre
+        
         totalPersonas++;
         this.cedula=1;
       //Porque al imprimir cedula para el objeto que entra a este método debe dar 1 
